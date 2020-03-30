@@ -1,0 +1,74 @@
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    position: relative;  
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    top: 550px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    cursor: pointer;
+    transition: 0.4s;
+    display:table-footer-group;
+    
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -80px;
+    height: 50px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+   .bottom{
+
+    bottom: 10px;
+    
+   }
+  }
+  
+  
+ 
